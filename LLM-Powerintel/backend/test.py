@@ -332,7 +332,7 @@ def format_data_preview(df: pd.DataFrame) -> str:
         preview += "\n- ...and {} more columns".format(len(df.columns)-3)
     return preview
 
-@app.post("/chat")
+@app.post("/chat") #this is the endpoint
 async def chat_endpoint(request: QueryRequest):
     try:
         # Check for conversational intents first
